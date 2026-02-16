@@ -1,0 +1,24 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-after-the-user-clicks-taps-yes-and-the-confirmation-state-is-shown-keep-displaying-the-existing-confirmation-heading-text-exactly-good-choice-and-additionally-render-the-following-5-lines-of-text-beneath-it-as-separate-lines-using-a-simple-fade-in-animation-no-typewriter-effect-1-yay-2-you-just-made-my-day-saying-yes-3-i-promise-to-make-it-worth-your-while-4-i-ll-try-not-to-be-too-annoying-maybe-5-can-t-wait-to-see-where-this-goes",
+      "featureTitle": "After the user clicks/taps “Yes” and the confirmation state is shown, keep displaying the existing confirmation heading text exactly “Good choice ❤️”, and additionally render the following 5 lines of text beneath it (as separate lines), using a simple fade-in animation (no typewriter effect):\n1) \"Yay! 😄\"\n2) \"You just made my day saying yes 😉\"\n3) \"I promise to make it worth your while 😏\"\n4) \"I’ll try not to be too annoying… maybe 😅\"\n5) \"Can’t wait to see where this goes!\"",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/index.css"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

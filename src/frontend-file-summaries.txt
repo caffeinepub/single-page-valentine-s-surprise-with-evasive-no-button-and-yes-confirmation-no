@@ -1,0 +1,6 @@
+{
+  "frontend/src/App.tsx": "Main Valentine's page component with centered question, affectionate subtitle, Yes/No buttons, evasive No button interaction, confirmation message with \"Good choice ❤️\" heading, and a 5-line follow-up message that fades in after clicking Yes, plus decorative floating hearts.",
+  "frontend/src/hooks/useEvasiveNoButton.ts": "Custom React hook that implements playful evasive behavior for the No button, tracking mouse/touch proximity and smoothly repositioning the button within viewport bounds using requestAnimationFrame for optimal performance on mobile and desktop, with proper TypeScript typing for refs.",
+  "frontend/src/index.css": "Global styles with romantic pink/white OKLCH color theme, custom animations (floating hearts, fade-in, fade-in-text for 5-line message, gentle pulse), button interaction styles, and mobile-specific overscroll prevention for smooth touch interactions.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with romantic color palette tokens and increased border radius for softer, more romantic button styling."
+}

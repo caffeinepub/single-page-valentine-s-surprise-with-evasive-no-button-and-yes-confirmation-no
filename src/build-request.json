@@ -1,0 +1,45 @@
+{
+  "kind": "build_request",
+  "title": "Add a 5-line fade-in message after clicking Yes",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-6",
+      "text": "After the user clicks/taps “Yes” and the confirmation state is shown, keep displaying the existing confirmation heading text exactly “Good choice ❤️”, and additionally render the following 5 lines of text beneath it (as separate lines), using a simple fade-in animation (no typewriter effect):\n1) \"Yay! 😄\"\n2) \"You just made my day saying yes 😉\"\n3) \"I promise to make it worth your while 😏\"\n4) \"I’ll try not to be too annoying… maybe 😅\"\n5) \"Can’t wait to see where this goes!\"",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-yes-text",
+          "msg-user-enof"
+        ],
+        "quotes": [
+          "“Yay! 😄\nYou just made my day saying yes 😉\nI promise to make it worth your while 😏\nI’ll try not to be too annoying… maybe 😅\nCan’t wait to see where this goes!”",
+          "this is enof"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Before clicking “Yes”, the page remains unchanged (question + subtitle + two buttons, with evasive “No”).",
+        "After clicking/tapping “Yes”, both buttons are hidden and the heading “Good choice ❤️” remains visible exactly as-is.",
+        "Under “Good choice ❤️”, the 5 provided lines appear in order, each on its own line.",
+        "The 5-line message uses a simple fade-in animation (no typing animation), and the animation does not cause layout shift or accidental scrolling on mobile/tablet (including iPad Chrome).",
+        "No meme image or photo is introduced as part of this change."
+      ]
+    }
+  ],
+  "constraints": [
+    "Frontend immutable paths (hooks and main entry files listed in SYSTEM_CONTEXT) must not be edited.",
+    "Keep the experience as a single page (no navigation/redirects).",
+    "Do not change the existing required confirmation heading text: “Good choice ❤️”.",
+    "Do not add any meme image or any photo."
+  ],
+  "nonGoals": [
+    "Adding backend persistence or storing user responses.",
+    "Adding login/authentication changes.",
+    "Adding new buttons, routes, or multi-page flows.",
+    "Implementing complex animations such as typewriter, confetti, or additional interactive sequences beyond a simple fade-in for the new text."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

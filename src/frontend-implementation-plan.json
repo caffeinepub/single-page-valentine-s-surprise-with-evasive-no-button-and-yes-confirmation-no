@@ -1,0 +1,30 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Fade-in 5-line message under confirmation heading",
+  "requirements": [
+    {
+      "id": "REQ-6",
+      "summary": "Show a 5-line message under the existing “Good choice ❤️” confirmation heading after clicking Yes, using a simple fade-in animation without layout shift or scrolling issues.",
+      "acceptanceCriteria": [
+        "Before clicking “Yes”, the page remains unchanged (question + subtitle + two buttons, with evasive “No”).",
+        "After clicking/tapping “Yes”, both buttons are hidden and the heading “Good choice ❤️” remains visible exactly as-is.",
+        "Under “Good choice ❤️”, the 5 provided lines appear in order, each on its own line.",
+        "The 5-line message uses a simple fade-in animation (no typing animation), and the animation does not cause layout shift or accidental scrolling on mobile/tablet (including iPad Chrome).",
+        "No meme image or photo is introduced as part of this change."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "In the confirmed state UI, keep rendering the existing heading text exactly “Good choice ❤️”, and add a new block beneath it that renders the 5 required lines as separate lines (e.g., stacked text elements). Apply a simple opacity-only fade-in class to the new 5-line block (not a typewriter effect), and ensure the animation uses transforms/opacity only (no reflow-triggering properties) to avoid layout shift or accidental scrolling on mobile/tablet."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Add a dedicated utility animation for a simple fade-in (opacity-only, optionally with a non-layout-affecting transform like translateY) intended for the new 5-line message. Use this instead of the existing scale-based fade-in if needed to better satisfy the no-layout-shift/no-accidental-scroll constraint."
+        }
+      ]
+    }
+  ]
+}

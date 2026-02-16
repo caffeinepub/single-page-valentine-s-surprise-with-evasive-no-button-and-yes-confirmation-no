@@ -1,0 +1,15 @@
+{
+  "backend/main.mo": "Empty Motoko actor canister.",
+  "feature_evidence.json": "Feature evidence report describing the 5-line fade‑in confirmation message and related frontend files.",
+  "frontend-file-summaries.txt": "Prewritten summaries of key frontend files including App, evasive button hook, CSS, and Tailwind config.",
+  "frontend/index.css": "Tailwind base theme variables and light/dark OKLCH color tokens with global background/foreground setup.",
+  "frontend/index.html": "Basic HTML shell mounting the React app via main.tsx.",
+  "frontend/src/App.tsx": "Main UI with Valentine question, Yes/No buttons, evasive No behavior, and confirmation state with fade‑in 5‑line message.",
+  "frontend/src/hooks/useActor.ts": "Hook creating and refreshing authenticated or anonymous backend actors via react-query.",
+  "frontend/src/hooks/useEvasiveNoButton.ts": "Hook that repositions the No button based on mouse or touch proximity using throttled, animated movement.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Authentication context and provider managing Internet Identity login, stored identities, and status.",
+  "frontend/src/index.css": "Romantic-theme Tailwind layers, color tokens, utilities, animations, and global typography.",
+  "frontend/src/main.tsx": "App entrypoint wiring React Query, Internet Identity provider, global CSS, and rendering App.",
+  "frontend/tailwind.config.js": "Configures Tailwind with dark mode, content paths, custom colors, container settings, animations, and extended theme tokens using CSS variables.",
+  "project_state.json": "Describes the project’s state, including Valentine UI requirements, features, and architecture notes for a single-page interactive experience."
+}

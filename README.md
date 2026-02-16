@@ -1,2 +1,3 @@
-# single-page-valentine-s-surprise-with-evasive-no-button-and-yes-confirmation-no
-Exported from Caffeine project: Single-page Valentine’s surprise with evasive “No” button and “Yes” confirmation (no image)
+## 
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`
